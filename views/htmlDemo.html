@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/theme.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Subhankar Dey</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">HTML Demo</a></li>
+					<li class="nav-item"><a class="nav-link" href="/students/add">Add Student</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+					<section>
+						<h2> Tables </h2>
+						<table>
+							<caption> Table 1 </caption>
+							<thead>
+								<tr>
+									<th> Header 1 </th>
+									<th> Header 2 </th>
+									<th> Header 3 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td> Cell 1 </td>
+									<td> Cell 2 </td>
+									<td> Cell 3 </td>
+								</tr>
+								<tr>
+									<td> Cell 4 </td>
+									<td> Cell 5 </td>
+									<td> Cell 6 </td>
+								</tr>
+								<tr>
+									<td> Cell 7 </td>
+									<td> Cell 8 </td>
+									<td> Cell 9 </td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table>
+							<caption> Table 2 </caption>
+							<thead>
+								<tr>
+									<th> Header A </th>
+									<th> Header B </th>
+									<th> Header C </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">Cell 1</td>
+									<td> Cell 2 </td>
+									<td> Cell 3 </td>
+								</tr>
+								<tr>
+									<td colspan="2"> Cell 4 </td>
+								</tr>
+								<tr>
+									<td>Cell 5</td>
+									<td colspan="2"> Cell 6 </td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="3"> Table Footer </td>
+								</tr>
+							</tfoot>
+						</table>
+						
+						<p> This section shows two HTML tables with different elements and properties </p>
+					</section>
+					
+					<section>
+						<h2> Lists </h2>
+						<ul>
+							<li> List item 1 </li>
+							<li> List item 2 </li>
+							<li>
+								List item 3
+								<ul>
+									<li> Sublist item 1 </li>
+									<li> Sublist item 2 </li>
+									<li> Sublist item 3 </li>
+								</ul>
+							</li>
+							<li> List item 4 </li>
+							<li> List item 5 </li>
+						</ul>
+						
+						<p> This section displays a list with multiple items, including a sublist </p>
+					</section>
+					
+					<section>
+						<h2> Images </h2>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Image 1">
+						<img src="https://seneca-my.sharepoint.com/:i:/g/personal/sdey10_myseneca_ca/EQMKcJIAh5VOhby2g2EB47QBzt2tjaB3IAYkBQvPi-HNkA?e=toWNeZ" alt="Image 2">
+						<iframe src="https://seneca-my.sharepoint.com/personal/sdey10_myseneca_ca/_layouts/15/embed.aspx?UniqueId=9de37d8c-b712-46ba-894a-93e5a2e3c90b" width="500" height="360" alt="Image 3"> </iframe>
+						<p> This section consists of three images including "alt" text </p>
+					</section>
+					
+					<section>
+						<h2> Audio </h2>
+						<audio controls>
+							<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.mp3" type="audio/mpeg">
+							<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.ogg" type="audio/ogg">
+							Your browser does not support the audio element.
+						</audio>
+						
+						<p> This section consists of a HTML5 audio player </p>
+					</section>
+					
+					<section>
+						<h2> Video </h2>
+						<video controls>
+							<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.mp4" type="video/mp4">
+							<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.ogg" type="video/ogg">
+							<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.webm" type="video/webm">
+							Your browser does not support the video element.
+						</video>
+						
+						<p> This section consists of a HTML5 video player </p>
+					</section>
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
